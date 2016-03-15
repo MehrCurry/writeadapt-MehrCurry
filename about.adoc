@@ -1,5 +1,5 @@
 = About {sitename}
-Your Name
+Me
 :page-layout: base
 :showtitle:
 
