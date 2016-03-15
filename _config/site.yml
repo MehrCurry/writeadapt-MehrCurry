@@ -20,3 +20,17 @@ asciidoctor:
     idseparator: '-'
     sectanchors: ''
     icons: font
+profiles:
+  development:
+    deploy: nil
+  production:
+    base_url: http://%USERNAME%.github.io/writeadapt-%USERNAME%
+    ctx_path: /writeadapt-%USERNAME%
+    asciidoctor:
+      :attributes:
+        base_url: http://%USERNAME%.github.io/writeadapt-%USERNAME%
+        ctx_path: /writeadapt-%USERNAME%
+        imagesdir: http://%USERNAME%.github.io/writeadapt-%USERNAME%/images
+    deploy:
+      host: github_pages
+      branch: gh-pages
